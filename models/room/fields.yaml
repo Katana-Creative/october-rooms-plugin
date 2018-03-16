@@ -1,0 +1,38 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: Name
+        searchable: true
+        span: left
+    slug:
+        label: Slug
+        span: right
+        preset:
+            field: name
+            type: slug
+    description:
+        label: Description
+        searchable: true
+        type: richeditor
+        size: huge
+    features:
+          label: Features
+          searchable: true
+          type: richeditor
+          size: huge
+    amenities:
+          label: Amenities
+          searchable: true
+          type: richeditor
+          size: huge
+    book_url:
+        label: Book Url
+        searchable: true
+    photos:
+        label: Photos
+        searchable: true
+        type: fileupload

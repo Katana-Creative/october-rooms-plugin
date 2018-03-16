@@ -1,0 +1,20 @@
+
+<div class="container-fluid">
+    <div class="row six-img-grid rooms-grid">
+        {% for room in rooms %}
+            <div class="col-sm-4 img-block">
+                <a href="{{ url('rooms') }}/{{ room.slug }}" class="one-buiding-pic">
+
+
+                    <img src="{{ room.photos[0].thumb(342,342,'crop') }}" align="luxury hotel singapore" />
+
+
+                    <h3 title="{{ room.name }}" class="text-uppercase room-link-text">
+                        {{ room.name }}
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </h3>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>

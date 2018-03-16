@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Room
+
+# Model Form Field configuration
+form: $/katana/rooms/models/room/fields.yaml
+
+# Model Class name
+modelClass: Katana\Rooms\Models\Room
+
+# Default redirect location
+defaultRedirect: katana/rooms/rooms
+
+# Create page
+create:
+    title: Create Room
+    redirect: katana/rooms/rooms/update/:id
+    redirectClose: katana/rooms/rooms
+
+# Update page
+update:
+    title: Edit Room
+    redirect: katana/rooms/rooms
+    redirectClose: katana/rooms/rooms
+
+# Preview page
+preview:
+    title: Preview Room

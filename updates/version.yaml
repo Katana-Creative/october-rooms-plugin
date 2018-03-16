@@ -1,0 +1,5 @@
+1.0.1: First version of Rooms
+1.0.2:
+    - Create Rooms Table
+    - create_rooms_table.php
+    - add_rooms_table.php

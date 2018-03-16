@@ -1,0 +1,9 @@
+<ul class="text-uppercase rooms-list">
+    {% for room in rooms %}
+    <li>
+        <a href="{{ url('rooms') }}/{{ room.slug }}" class="red-text" title="hotel vagabond {{ room.name | lower }}">
+            {{ room.name }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
